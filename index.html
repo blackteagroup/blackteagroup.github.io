@@ -52,9 +52,12 @@
     We're a modern organization that's been brewing systems and applications with bleeding-edge technologies
     </p>
     <p>
-    3 years experience in Javascript and Golang
+    We build management systems, system tooling, API servers, web interfaces, and mobile applications with:
+    </p>
+    <p>
+    <span id="primary">3</span> years experience in Clojure(Script), Scala, Javascript and Golang
     <br/>
-    2+ years experience in Clojure(Script)
+    <span id="secondary">1</span>+ years experience in Elixir
     <b></b>
     </p>
     <p>
@@ -111,6 +114,16 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script>
+    const current = (new Date()).getFullYear();
+    const primary = 2015, secondary = 2018;
+    try {
+      document.getElementById('primary').innerHTML = current - primary;
+      document.getElementById('secondary').innerHTML = current - secondary;
+    } catch (e) {
+      console.error(e)
+    }
+  </script>
 </body>
 
 </html>
